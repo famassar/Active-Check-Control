@@ -1,0 +1,42 @@
+{
+    "zabbix_export": {
+        "version": "7.0",
+        "template_groups": [
+            {
+                "uuid": "7df96b18c230490a9a0a9e2307226338",
+                "name": "Templates"
+            }
+        ],
+        "templates": [
+            {
+                "uuid": "4cfc92ad5b1449f59378513f8d0babab",
+                "template": "Active Check Control",
+                "name": "Active Check Control",
+                "vendor": {
+                    "name": "Fabrizio Massari",
+                    "version": "7.0-1"
+                },                
+                "groups": [
+                    {
+                        "name": "Templates"
+                    }
+                ],
+                "items": [
+                    {
+                        "uuid": "f0c9d75f29d64792a776ffb99e4d8964",
+                        "name": "Active Naming",
+                        "type": "ZABBIX_ACTIVE",
+                        "key": "log[/var/log/zabbix/zabbix_server.log, active]",
+                        "value_type": "LOG",
+                        "trends": "0"
+                    }
+                ],
+                "tags": [
+                    {
+                        "tag": "Lexa"
+                    }
+                ]
+            }
+        ]
+    }
+}
